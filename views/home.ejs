@@ -1,0 +1,17 @@
+<%- include("partials/header") %> 
+
+<div class="home main">
+    <h1 class="heading">Home</h1>
+    <p class="description"><%= content %> </p>
+
+    <div class="composed-data">
+        <% for( let item of itemsArray){ %> 
+            <h1 class="heading"><%= item.title %> </h1>
+            <p class="description"><%= item.postedText.slice(0,100) + "..." %> <a href=<%= item.title.trim().toLowerCase().replace(/\s/g, "-") %> >Read More</a></p>
+        <% } %> 
+    </div>
+</div>
+
+
+
+<%- include("partials/footer") %> 

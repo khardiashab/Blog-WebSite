@@ -1,0 +1,124 @@
+html{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+nav{
+    height: 100px;
+    letter-spacing: 2px;
+    color: grey;
+    text-transform: uppercase;
+    background-color: rgb(236, 234, 234);
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.6);
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+.navbar-logo{
+    font-size: 2.5rem;
+    margin-left: 5%;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    right: 10%;
+    /* padding-bottom: 30px; */
+    
+}
+
+.pos-center{
+    /* border: 2px solid red; */
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+}
+
+.item-link{
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+    position: relative;
+    bottom:20%;
+}
+
+.item-link:hover{
+    color: rgb(8, 141, 108);
+}
+
+
+.item-link::after{
+    color: rgb(7, 83, 83);
+}
+
+
+/*  footer styling  */
+footer{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(3, 94, 94);
+    color: rgb(250, 222, 194);
+    margin-top: auto;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    text-align: center;
+}
+.main{
+    padding: 50px 100px 50px;
+}
+
+/*  heading styling */
+.heading{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.849)
+}
+
+
+/* form container styling */
+.form-container{
+    height: 100%;
+    padding: 100px;
+    color:rgb(1, 28, 53);
+
+}
+form> h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: crimson;
+}
+form>label{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px;
+}
+.input{
+    border:2px solid rgb(72, 89, 243);
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(1, 28, 53);
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 5px 30px;
+    
+}
+input:focus{
+    border: none;
+    font-size: larger;
+}
+.title{
+    height: 30px;
+    font-size: larger;
+}
+
